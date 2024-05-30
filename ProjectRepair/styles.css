@@ -15,12 +15,40 @@ body, html {
     object-fit: cover;
     z-index: -1;
 }
+.navbar {
+    position: fixed;
+    top: 0;
+    height: 50px;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.546);
+    backdrop-filter: blur(30px); /* Same blur effect as cards */
+    z-index: 2;
+}
+.navbar ul {
+    list-style-type: none;
+    margin: 2px;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+}
+.navbar ul li {
+    margin: 10px 20px;
+}
+.navbar ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+}
+.navbar ul li a:hover {
+    text-decoration: underline;
+}
 .content {
     position: relative;
     z-index: 1;
     color: white;
     text-align: center;
     padding: 20px;
+    margin-top: 60px; /* Adjusted for navbar height */
 }
 .grid-container {
     display: grid;
@@ -28,6 +56,7 @@ body, html {
     gap: 20px;
     max-width: 1200px;
     margin: auto;
+    margin-top: 80px;
 }
 .card {
     background-color: rgba(0, 0, 0, 0.546);
@@ -35,5 +64,5 @@ body, html {
     padding: 20px;
     text-align: left;
     color: white;
-    backdrop-filter: blur(30px); /* Add this line for the blur effect */
+    backdrop-filter: blur(30px); /* Blur effect */
 }
