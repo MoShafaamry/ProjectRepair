@@ -30,9 +30,10 @@ body, html {
     margin: auto;
 }
 .card {
-    background-color: rgba(0, 0, 0, 0.7);
+    background-color: rgba(0, 0, 0, 0.546);
     border-radius: 10px;
     padding: 20px;
     text-align: left;
     color: white;
+    backdrop-filter: blur(30px); /* Add this line for the blur effect */
 }
