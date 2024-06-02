@@ -51,3 +51,44 @@ body, html {
     padding: 20px;
     margin-top: 50px; /* Adjusted for navbar height */
 }
+.modern-form {
+    background-color: rgba(255, 255, 255, 0.8);
+    padding: 20px;
+    border-radius: 10px;
+    max-width: 400px;
+    margin: 0 auto;
+    color: black;
+    text-align: left;
+}
+.modern-form label {
+    display: block;
+    margin-bottom: 10px;
+    font-weight: bold;
+}
+.modern-form input[type="email"],
+.modern-form textarea {
+    width: 90%;
+    padding: 10px;
+    margin-top: 5px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+}
+.modern-form textarea {
+    resize: vertical;
+    height: 100px;
+}
+.modern-form button {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #007BFF;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s;
+}
+.modern-form button:hover {
+    background-color: #0056b3;
+}

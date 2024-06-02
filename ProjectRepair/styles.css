@@ -47,7 +47,7 @@ body, html {
     z-index: 1;
     color: white;
     text-align: center;
-    padding: 20px;
+    padding: 50px;
     margin-top: 50px; /* Adjusted for navbar height */
 }
 .grid-container {
