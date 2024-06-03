@@ -3,14 +3,14 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Video Background with Grid of Cards</title>
+    <title>Image Background with Grid of Cards</title>
     <link rel="stylesheet" type="text/css" href="styles/appointment.css">
 </head>
 <body>
-    <video class="video-background" autoplay muted loop>
-        <source src="backgroundvideo.mp4" type="video/mp4">
-        Your browser does not support the video tag.
-    </video>
+    <div class="background-container">
+        <div class="overlay"></div>
+    </div>
+    
     <nav class="navbar">
         <ul>
             <li><a href="../index.html">Home</a></li>
@@ -20,21 +20,31 @@
         </ul>
     </nav>
     <div class="content">
-        <h1>Welcome to My Website</h1>
-        <p>Enjoy the video background with a grid of cards!</p>
+        <h1>Book your appointment</h1>
+        <p>Fill out the form below to schedule an appointment for your vehicle with one of our experts.</p>
         
-        <!-- Modernized form -->
         <form action="https://formspree.io/f/mleqydlp" method="POST" class="modern-form">
+            <label>
+                Full name:
+                <input type="text" name="name" required>
+            </label>
+            <label>
+                Phone number:
+                <input type="tel" name="phone number">
+            </label>
             <label>
                 Your email:
                 <input type="email" name="email" required>
             </label>
             <label>
-                Your message:
-                <textarea name="message" required></textarea>
+                Select a date:
+                <input type="date" name="date" required>
             </label>
+            <!-- your other form fields go here -->
             <button type="submit">Send</button>
         </form>
+        
+          
     </div>
 </body>
 </html>
