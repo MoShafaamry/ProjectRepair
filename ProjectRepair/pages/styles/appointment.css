@@ -5,6 +5,7 @@ body, html {
     height: 100%;
     font-family: Arial, sans-serif;
     overflow: auto; /* Enable scrolling */
+    background-color: black;
 }
 .video-background {
     position: fixed; /* Keep the video fixed in the background */
@@ -47,42 +48,47 @@ body, html {
     z-index: 1;
     color: white;
     text-align: center;
-    padding: 50px;
+    padding: 20px;
     margin-top: 50px; /* Adjusted for navbar height */
 }
-.grid-container {
-    display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr)); /* Increased min-width to make cards wider */
-    gap: 20px;
-    max-width: 1200px;
-    margin: auto;
-    margin-top: 50px;
-}
-.card {
-    background-color: rgba(0, 0, 0, 0.546);
-    border-radius: 10px;
+.modern-form {
+    background-color: rgba(255, 255, 255, 0.8);
     padding: 20px;
-    text-align: left;
-    color: white;
-    backdrop-filter: blur(30px); /* Blur effect */
-    margin: 10px; /* Added margin to create space between cards */
-}
-.card img {
-    width: 100%;
-    height: auto;
     border-radius: 10px;
-    margin-bottom: 10px;
+    max-width: 400px;
+    margin: 0 auto;
+    color: black;
+    text-align: left;
 }
-.button {
+.modern-form label {
+    display: block;
+    margin-bottom: 10px;
+    font-weight: bold;
+}
+.modern-form input[type="email"],
+.modern-form textarea {
+    width: 90%;
+    padding: 10px;
+    margin-top: 5px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+}
+.modern-form textarea {
+    resize: vertical;
+    height: 100px;
+}
+.modern-form button {
     display: inline-block;
     padding: 10px 20px;
-    background-color: #d7d7d7; /* Change to your desired color */
-    color: rgb(0, 0, 0);
-    text-align: center;
+    background-color: #007BFF;
+    color: white;
+    border: none;
     border-radius: 5px;
-    text-decoration: none;
-    font-size: 18px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s;
 }
-.button:hover {
-    background-color: #acacac; /* Change to your desired hover color */
+.modern-form button:hover {
+    background-color: #0056b3;
 }
