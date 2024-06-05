@@ -5,6 +5,7 @@ body, html {
     height: 100%;
     font-family: Arial, sans-serif;
     overflow: auto; /* Enable scrolling */
+    background-color: black;
 }
 .video-background {
     position: fixed; /* Keep the video fixed in the background */
