@@ -5,6 +5,7 @@ body, html {
     height: 100%;
     font-family: Arial, sans-serif;
     overflow: auto; /* Enable scrolling */
+    background-color: rgb(0, 0, 0);
 }
 .video-background {
     position: fixed; /* Keep the video fixed in the background */
@@ -59,7 +60,7 @@ body, html {
     margin-top: 25px;
 }
 .card {
-    background-color: rgba(0, 0, 0, 0.546);
+    background-color: rgba(67, 67, 67, 0.546);
     border-radius: 10px;
     padding: 20px;
     text-align: left;
