@@ -116,7 +116,7 @@ body, html {
     }
 }
 
-@media (max-width: 480px) {
+@media (max-width: 490px) {
     .navbar ul {
         flex-direction: column; /* Stack items vertically */
         align-items: center; /* Center items */
