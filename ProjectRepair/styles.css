@@ -101,7 +101,7 @@ body, html {
     background-color: #acacac; /* Change to your desired hover color */
 }
 
-/* Responsive Styles */
+/* Responsive Nav Bar Styles */
 @media (max-width: 768px) {
     .navbar ul {
         justify-content: space-around; /* Distribute space around items */
@@ -116,17 +116,4 @@ body, html {
     }
 }
 
-@media (max-width: 480px) {
-    .navbar ul {
-        flex-direction: column; /* Stack items vertically */
-        align-items: center; /* Center items */
-    }
 
-    .navbar ul li {
-        margin: 5px 0; /* Reduce margin for very small screens */
-    }
-
-    .navbar ul li a {
-        font-size: 14px; /* Further adjust font size for very small screens */
-    }
-}

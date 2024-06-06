@@ -118,3 +118,18 @@ body, html {
 .button:hover {
     background-color: #acacac; /* Change to your desired hover color */
 }
+
+/* Responsive Nav Bar Styles */
+@media (max-width: 768px) {
+    .navbar ul {
+        justify-content: space-around; /* Distribute space around items */
+    }
+
+    .navbar ul li {
+        margin: 10px 10px; /* Reduce margin for smaller screens */
+    }
+
+    .navbar ul li a {
+        font-size: 16px; /* Adjust font size for smaller screens */
+    }
+}
