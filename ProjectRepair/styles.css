@@ -7,6 +7,7 @@ body, html {
     overflow: auto; /* Enable scrolling */
     background-color: black;
 }
+
 .video-background {
     position: fixed; /* Keep the video fixed in the background */
     top: 0;
@@ -16,6 +17,7 @@ body, html {
     object-fit: cover;
     z-index: -1;
 }
+
 .navbar {
     position: fixed;
     top: 0;
@@ -25,24 +27,30 @@ body, html {
     backdrop-filter: blur(30px); /* Same blur effect as cards */
     z-index: 2;
 }
+
 .navbar ul {
     list-style-type: none;
     margin: 2px;
     padding: 0;
     display: flex;
     justify-content: center;
+    flex-wrap: wrap; /* Allow wrapping for responsiveness */
 }
+
 .navbar ul li {
     margin: 10px 20px;
 }
+
 .navbar ul li a {
     color: white;
     text-decoration: none;
     font-size: 18px;
 }
+
 .navbar ul li a:hover {
     text-decoration: underline;
 }
+
 .content {
     position: relative;
     z-index: 1;
@@ -51,6 +59,7 @@ body, html {
     padding: 50px;
     margin-top: 50px; /* Adjusted for navbar height */
 }
+
 .grid-container {
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(300px, 1fr)); /* Increased min-width to make cards wider */
@@ -59,6 +68,7 @@ body, html {
     margin: auto;
     margin-top: 25px;
 }
+
 .card {
     background-color: rgba(0, 0, 0, 0.546);
     border-radius: 10px;
@@ -68,12 +78,14 @@ body, html {
     backdrop-filter: blur(30px); /* Blur effect */
     margin: 10px; /* Added margin to create space between cards */
 }
+
 .card img {
     width: 100%;
     height: auto;
     border-radius: 10px;
     margin-bottom: 10px;
 }
+
 .button {
     display: inline-block;
     padding: 10px 20px;
@@ -84,6 +96,37 @@ body, html {
     text-decoration: none;
     font-size: 18px;
 }
+
 .button:hover {
     background-color: #acacac; /* Change to your desired hover color */
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+    .navbar ul {
+        justify-content: space-around; /* Distribute space around items */
+    }
+
+    .navbar ul li {
+        margin: 10px 10px; /* Reduce margin for smaller screens */
+    }
+
+    .navbar ul li a {
+        font-size: 16px; /* Adjust font size for smaller screens */
+    }
+}
+
+@media (max-width: 480px) {
+    .navbar ul {
+        flex-direction: column; /* Stack items vertically */
+        align-items: center; /* Center items */
+    }
+
+    .navbar ul li {
+        margin: 5px 0; /* Reduce margin for very small screens */
+    }
+
+    .navbar ul li a {
+        font-size: 14px; /* Further adjust font size for very small screens */
+    }
 }

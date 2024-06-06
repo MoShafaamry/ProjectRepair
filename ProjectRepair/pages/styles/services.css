@@ -43,6 +43,37 @@ body, html {
 .navbar ul li a:hover {
     text-decoration: underline;
 }
+
+/* Responsive Nav Bar Styles */
+@media (max-width: 768px) {
+    .navbar ul {
+        justify-content: space-around; /* Distribute space around items */
+    }
+
+    .navbar ul li {
+        margin: 10px 10px; /* Reduce margin for smaller screens */
+    }
+
+    .navbar ul li a {
+        font-size: 16px; /* Adjust font size for smaller screens */
+    }
+}
+
+@media (max-width: 480px) {
+    .navbar ul {
+        flex-direction: column; /* Stack items vertically */
+        align-items: center; /* Center items */
+    }
+
+    .navbar ul li {
+        margin: 5px 0; /* Reduce margin for very small screens */
+    }
+
+    .navbar ul li a {
+        font-size: 14px; /* Further adjust font size for very small screens */
+    }
+}
+
 .content {
     position: relative;
     z-index: 1;
