@@ -84,7 +84,7 @@ h1, h2, h3 {
 .hero {
     text-align: center;
     padding: 8rem 0 4rem;
-    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('./images/carimage.jpeg');
+    background-image: url('./images/carimage.jpeg');
     background-size: cover;
     background-position: center;
     color: white;
